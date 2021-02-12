@@ -7,7 +7,7 @@ const FoodModel = require("./models/Food");
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://dogacan:mustafa670@crud.hizbl.mongodb.net/food?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://dogacan:<password>@crud.hizbl.mongodb.net/<dbname>?retryWrites=true&w=majority', 
 {useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex: true});
 
 app.post('/insert', async (req, res) => {
