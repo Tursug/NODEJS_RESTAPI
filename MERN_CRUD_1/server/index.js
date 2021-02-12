@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
  });
 
 try{
-    mongoose.connect('mongodb+srv://dogacan:mustafa670@crud.hizbl.mongodb.net/crud?retryWrites=true&w=majority', {
+    mongoose.connect('mongodb+srv://dogacan:<password>@crud.hizbl.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     useNewUrlParser:true,
     useUnifiedTopology:true
     });
